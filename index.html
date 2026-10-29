@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitScope - GitHub Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2 class="logo">GitScope</h2>
+
+        <nav>
+            <a href="#analyze">Analyze</a>
+            <a href="#repositories">Repositories</a>
+            <a href="#insights">Insights</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="analyze">
+            <p class="eyebrow">● PUBLIC GITHUB INTELLIGENCE</p>
+
+            <h1>Understand your GitHub profile beyond the numbers.</h1>
+
+            <p class="hero-description">
+                Analyze repositories, programming languages and
+                developer activity in one clear view.
+            </p>
+
+            <form class="search-form" id="search-form">
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter GitHub username (e.g. torvalds)"
+                    aria-label="GitHub username"
+                >
+                <button type="submit">Analyze →</button>
+            </form>
+
+            <p class="suggestions">
+                Try a public profile: torvalds
+            </p>
+        </section>
+
+        <section class="dashboard">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">PROFILE OVERVIEW</p>
+                    <h2>Developer Analytics</h2>
+                </div>
+                <span class="status">● Sample preview</span>
+            </div>
+
+            <div class="profile-card">
+                <div>
+                    <h3 id="profile-name">GitHub Developer</h3>
+<p id="profile-username">@username</p>
+                </div>
+
+                <div class="score">
+                    <span>GitScope Score</span>
+                    <strong>--</strong>
+                </div>
+            </div>
+
+            <div class="metrics-grid">
+                <article class="metric-card">
+                    <p>Public Repositories</p>
+                    <h3>--</h3>
+                    <span>Repositories available</span>
+                </article>
+
+                <article class="metric-card">
+                    <p>Followers</p>
+                    <h3>--</h3>
+                    <span>Developer community</span>
+                </article>
+
+                <article class="metric-card">
+                    <p>Following</p>
+                    <h3>--</h3>
+                    <span>Profiles followed</span>
+                </article>
+
+                <article class="metric-card">
+                    <p>Public Gists</p>
+                    <h3>--</h3>
+                    <span>Code snippets</span>
+                </article>
+            </div>
+
+            <div class="analytics-grid" id="insights">
+                <article class="panel">
+                    <h3>Language Breakdown</h3>
+                    <p>Explore the languages used in public repositories.</p>
+
+                    <div class="language-row">
+                        <span>JavaScript</span>
+                        <span>—</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill javascript"></div>
+                    </div>
+
+                    <div class="language-row">
+                        <span>Python</span>
+                        <span>—</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill python"></div>
+                    </div>
+
+                    <div class="language-row">
+                        <span>HTML / CSS</span>
+                        <span>—</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill html"></div>
+                    </div>
+
+                    <p class="note">
+                        Language statistics will appear after analysis.
+                    </p>
+                </article>
+
+                <article class="panel">
+                    <h3>Commit Activity</h3>
+                    <p>Understand development consistency over time.</p>
+
+                    <div class="activity-grid">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+
+                    <p class="note">
+                        Activity visualization will be added later.
+                    </p>
+                </article>
+            </div>
+
+            <article class="panel repositories" id="repositories">
+                <h3>Top Repositories</h3>
+                <p>Your public repositories and their details will appear here.</p>
+
+                <div class="repository-row">
+                    <div>
+                        <strong>Repository name</strong>
+                        <p>Repository description</p>
+                    </div>
+                    <span>★ --</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="disciplines" id="about">
+            <p class="eyebrow">ARCHITECTURE</p>
+            <h2>Core Analytical Disciplines</h2>
+            <p>Explore different perspectives on developer activity.</p>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <h3>Developer Analytics</h3>
+                    <p>Explore public profile activity and repository trends.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Repository Insights</h3>
+                    <p>Understand public repositories and their metadata.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Language Analysis</h3>
+                    <p>Discover the programming languages in your projects.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Developer Comparison</h3>
+                    <p>Compare public GitHub profile metrics.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>GitScope — GitHub Developer Analytics</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

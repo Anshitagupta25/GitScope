@@ -1,0 +1,390 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8fc;
+    color: #202936;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 6%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5eaf1;
+}
+
+.logo {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 800;
+    color: #172b25;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.navbar a {
+    color: #526071;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #087b38;
+}
+
+.hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 64px 24px 48px;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #087b38;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    max-width: 700px;
+    margin: 18px auto;
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.2;
+    letter-spacing: -1.2px;
+}
+
+.hero-description {
+    max-width: 580px;
+    margin: 0 auto 28px;
+    color: #657184;
+    font-size: 15px;
+}
+
+.search-form {
+    display: flex;
+    gap: 8px;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 6px;
+    background: #ffffff;
+    border: 1px solid #e1e7ef;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(31, 41, 55, 0.06);
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+.search-form button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    background: #087b38;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background: #06632e;
+}
+
+.suggestions {
+    margin-top: 14px;
+    color: #738094;
+    font-size: 12px;
+}
+
+.dashboard,
+.disciplines {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 24px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.section-heading h2,
+.disciplines h2 {
+    margin: 4px 0;
+    font-size: 25px;
+}
+
+.status {
+    color: #087b38;
+    font-size: 12px;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e7ecf3;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.profile-card h3,
+.profile-card p {
+    margin: 4px 0;
+}
+
+.profile-card p {
+    color: #738094;
+    font-size: 13px;
+}
+
+.score {
+    text-align: right;
+}
+
+.score span {
+    display: block;
+    color: #738094;
+    font-size: 12px;
+}
+
+.score strong {
+    color: #087b38;
+    font-size: 28px;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.metric-card,
+.panel,
+.feature-card {
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e7ecf3;
+    border-radius: 10px;
+}
+
+.metric-card p {
+    margin: 0;
+    color: #667387;
+    font-size: 13px;
+}
+
+.metric-card h3 {
+    margin: 8px 0;
+    font-size: 28px;
+}
+
+.metric-card span {
+    color: #087b38;
+    font-size: 11px;
+}
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.panel h3 {
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.panel > p {
+    color: #718096;
+    font-size: 13px;
+}
+
+.language-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+.bar {
+    height: 9px;
+    margin-top: 7px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #e9eef4;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: inherit;
+}
+
+.javascript {
+    width: 65%;
+    background: #087b38;
+}
+
+.python {
+    width: 35%;
+    background: #50b878;
+}
+
+.html {
+    width: 20%;
+    background: #a8d9b8;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: 11px !important;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 8px;
+    margin: 28px 0;
+}
+
+.activity-grid span {
+    height: 26px;
+    border-radius: 4px;
+    background: #dcefe2;
+}
+
+.activity-grid span:nth-child(3n) {
+    background: #94d5a8;
+}
+
+.activity-grid span:nth-child(4n) {
+    background: #43a966;
+}
+
+.activity-grid span:nth-child(7n) {
+    background: #087b38;
+}
+
+.repositories {
+    margin-bottom: 24px;
+}
+
+.repository-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 0;
+    border-top: 1px solid #e7ecf3;
+}
+
+.repository-row strong {
+    color: #087b38;
+}
+
+.repository-row p {
+    margin: 4px 0 0;
+    color: #718096;
+    font-size: 12px;
+}
+
+.disciplines {
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+
+.disciplines > p:not(.eyebrow) {
+    color: #718096;
+    font-size: 14px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.feature-card h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.feature-card p {
+    margin-bottom: 0;
+    color: #718096;
+    font-size: 13px;
+}
+
+footer {
+    padding: 24px;
+    border-top: 1px solid #e5eaf1;
+    background: #ffffff;
+    color: #718096;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navbar nav {
+        gap: 14px;
+    }
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .analytics-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .profile-card {
+        align-items: flex-start;
+    }
+}
