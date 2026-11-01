@@ -20,6 +20,7 @@ fetch("https://api.github.com/users/" + username)
 
     document.getElementById("profile-name").textContent = data.name;
     document.getElementById("profile-username").textContent = "@" + data.login;
+    document.getElementById("followers-count").textContent = data.followers;
 });
 
     });
