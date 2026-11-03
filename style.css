@@ -387,4 +387,11 @@ footer {
     .profile-card {
         align-items: flex-start;
     }
+
+}
+#profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
 }

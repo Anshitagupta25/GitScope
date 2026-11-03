@@ -17,10 +17,16 @@ fetch("https://api.github.com/users/" + username)
     })
 .then(function(data) {
     console.log("GitHub profile data:", data);
+    console.log("Following value:", data.following);
 
     document.getElementById("profile-name").textContent = data.name;
+    document.getElementById("profile-avatar").src = data.avatar_url;
     document.getElementById("profile-username").textContent = "@" + data.login;
+    document.getElementById("profile-bio").textContent = data.bio || "No bio available.";
     document.getElementById("followers-count").textContent = data.followers;
+    document.getElementById("repositories-count").textContent = data.public_repos;
+    document.getElementById("following-count").textContent = data.following;
+    document.getElementById("gists-count").textContent = data.public_gists;
 });
 
     });
