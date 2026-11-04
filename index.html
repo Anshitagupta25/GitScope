@@ -65,7 +65,7 @@
 
                 <div class="score">
                     <span>GitScope Score</span>
-                    <strong>--</strong>
+                    <strong id="github-score">--</strong>
                 </div>
             </div>
 
@@ -96,38 +96,16 @@
             </div>
 
             <div class="analytics-grid" id="insights">
-                <article class="panel">
-                    <h3>Language Breakdown</h3>
-                    <p>Explore the languages used in public repositories.</p>
+                
+<article class="panel">
+    <h3>Language Breakdown</h3>
+    <p>Explore the languages used in public repositories.</p>
 
-                    <div class="language-row">
-                        <span>JavaScript</span>
-                        <span>—</span>
-                    </div>
-                    <div class="bar">
-                        <div class="bar-fill javascript"></div>
-                    </div>
+    <div id="language-list">
+        <p class="note">Language statistics will appear after analysis.</p>
+    </div>
+</article>
 
-                    <div class="language-row">
-                        <span>Python</span>
-                        <span>—</span>
-                    </div>
-                    <div class="bar">
-                        <div class="bar-fill python"></div>
-                    </div>
-
-                    <div class="language-row">
-                        <span>HTML / CSS</span>
-                        <span>—</span>
-                    </div>
-                    <div class="bar">
-                        <div class="bar-fill html"></div>
-                    </div>
-
-                    <p class="note">
-                        Language statistics will appear after analysis.
-                    </p>
-                </article>
 
                 <article class="panel">
                     <h3>Commit Activity</h3>
@@ -150,13 +128,9 @@
                 <h3>Top Repositories</h3>
                 <p>Your public repositories and their details will appear here.</p>
 
-                <div class="repository-row">
-                    <div>
-                        <strong>Repository name</strong>
-                        <p>Repository description</p>
-                    </div>
-                    <span>★ --</span>
-                </div>
+               <div id="repository-list">
+    <p class="note">Repository details will appear after analysis.</p>
+</div>
             </article>
         </section>
 
